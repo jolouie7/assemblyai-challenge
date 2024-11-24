@@ -171,9 +171,9 @@ export default function FileUpload() {
           onClick={handleSubmit}
           className="w-full"
         >
-          {uploading ? (
+          {!uploading ? (
             <>
-              <Spinner /> Uploading...
+              <Spinner variant="white" /> Uploading...
             </>
           ) : (
             <>
