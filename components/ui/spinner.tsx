@@ -4,10 +4,11 @@ import { cn } from "@/lib/utils";
 
 interface SpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: "sm" | "default" | "lg";
+  color?: string;
 }
 
 const Spinner = React.forwardRef<HTMLDivElement, SpinnerProps>(
-  ({ size = "default", className, ...props }, ref) => {
+  ({ size = "default", color, className, ...props }, ref) => {
     const sizeClasses = {
       sm: "h-4 w-4",
       default: "h-6 w-6",
@@ -16,7 +17,9 @@ const Spinner = React.forwardRef<HTMLDivElement, SpinnerProps>(
 
     return (
       <div ref={ref} className={cn("animate-spin", className)} {...props}>
-        <Loader2 className={cn("text-muted-foreground", sizeClasses[size])} />
+        <Loader2
+          className={cn(color || "text-muted-foreground", sizeClasses[size])}
+        />
         <span className="sr-only">Loading...</span>
       </div>
     );
