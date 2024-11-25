@@ -17,8 +17,9 @@ To run this project, you will need to add the following environment variables to
 Install assemblyai-challenge with npm
 
 ```bash
-  npm install assemblyai-challenge
-  cd assemblyai-challenge
+git clone https://github.com/jolouie7/assemblyai-challenge.git
+cd assemblyai-challenge
+npm install
 ```
 
 ## Screenshots
