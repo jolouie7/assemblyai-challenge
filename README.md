@@ -37,4 +37,7 @@ Install assemblyai-challenge with npm
 
 ## Roadmap
 
-- [ ] Add sign up and sign in
+- [ ] User authentication system
+- [ ] Saving and managing multiple summaries
+- [ ] Additional customization options for the summary format
+- [ ] Support for more file formats
